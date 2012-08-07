@@ -13,7 +13,7 @@ class Migration(SchemaMigration):
         db.alter_column('zinnia_category', 'slug', self.gf('django.db.models.fields.SlugField')(unique=True, max_length=255))
 
         # Adding unique constraint on 'Category', fields ['slug']
-        db.create_unique('zinnia_category', ['slug'])
+#        db.create_unique('zinnia_category', ['slug'])
 
         # Changing field 'Entry.title'
         db.alter_column('zinnia_entry', 'title', self.gf('django.db.models.fields.CharField')(max_length=255))

@@ -7,8 +7,8 @@ class Migration(SchemaMigration):
     def forwards(self, orm):
 
         # Changing field 'Category.parent'
-        db.alter_column('zinnia_category', 'parent_id', self.gf('mptt.fields.TreeForeignKey')(null=True, to=orm['zinnia.Category']))
-
+        #db.alter_column('zinnia_category', 'parent_id', self.gf('mptt.fields.TreeForeignKey')(null=True, to=orm['zinnia.Category']))
+        pass
 
     def backwards(self, orm):
 
